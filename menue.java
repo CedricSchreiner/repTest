@@ -12,6 +12,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
+//Globale Konstanten
 private static final int PROGRAMMENDE=0;
 private static final int MICHAEL_SAUER=1; 
 private static final int MIKE_SOUR=2;
