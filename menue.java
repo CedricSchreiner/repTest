@@ -10,6 +10,8 @@
  */
 
 import java.util.Scanner;
+import 
+
 private static final int PROGRAMMENDE=0;
 private static final int MICHAEL_SAUER=1; 
 private static final int MIKE_SOUR=2;
@@ -24,30 +26,35 @@ public class menue{
                                 "Michael Sauer",
                                 "Mike Sour",
 				"Mathias W."};
-
+		
+		Scanner scanner = new Scanner(System.in);
         	while(!isEnde){
-                	Scanner scanner = new Scanner(System.in);
-                	int wahl = scanner.nextInt();
-                	switch (wahl) {
-                        	case PROGRAMMENDE:
-                                	System.out.println(textfeld[0]);
-                                	isEnde=true;
-                        	break;
-                        	case MICHAEL_SAUER:
-                                	System.out.println("Michael Sauer");
-                        	break;
-                        	case MIKE_SOUR:
-                                	System.out.println("Mike Sour");
-                        	break;
-				case MATHIAS_W:
-					System.out.println("Mathias Wittling");
-				break;
-				case BANANE:
-					System.out.println("Mac ist zu umständlich!");
-				break;
-                        	default:
-                                	System.out.println("Fehler: Kenne ich nicht!");
-                        	}
+			try{
+				int wahl = scanner.nextInt();
+				switch (wahl) {
+					case PROGRAMMENDE:
+						System.out.println(textfeld[0]);
+						isEnde=true;
+					break;
+					case MICHAEL_SAUER:
+						System.out.println("Michael Sauer");
+					break;
+					case MIKE_SOUR:
+						System.out.println("Mike Sour");
+					break;
+					case MATHIAS_W:
+						System.out.println("Mathias Wittling");
+					break;
+					case BANANE:
+						System.out.println("Mac ist zu umständlich!");
+					break;
+					default:
+						System.out.println("Fehler: Kenne ich nicht!");
+					}
+			}catch(IllegalArgumentException e){
+				System.err.println(e + "Ein Fehler ist aufgetreten.");
+			}catch(InputMismatchException e){
+				System.err.println(e + "Fehlerhafte Eingabe");
                 	}
         	}
 	}
