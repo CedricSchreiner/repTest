@@ -16,7 +16,8 @@ private static final int PROGRAMMENDE=0;
 private static final int MICHAEL_SAUER=1; 
 private static final int MIKE_SOUR=2;
 private static final int MATHIAS_W=3;
-private static final int BANENE=4;
+private static final int BANANE=4;
+
 public class menue{
         public static void main(String[] args) {
         	
