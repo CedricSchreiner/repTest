@@ -10,7 +10,7 @@
  */
 
 import java.util.Scanner;
-import 
+import java.util.InputMismatchException;
 
 private static final int PROGRAMMENDE=0;
 private static final int MICHAEL_SAUER=1; 
