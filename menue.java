@@ -33,22 +33,21 @@ public class menue{
 			try{
 				int wahl = scanner.nextInt();
 				switch (wahl) {
-					case PROGRAMMENDE:
-						System.out.println(textfeld[0]);
-						isEnde=true;
-					break;
-					case MICHAEL_SAUER:
-						System.out.println("Michael Sauer");
-					break;
-					case MIKE_SOUR:
-						System.out.println("Mike Sour");
-					break;
-					case MATHIAS_W:
-						System.out.println("Mathias Wittling");
-					break;
-					case BANANE:
-						System.out.println("Mac ist zu umständlich!");
-					break;
+					case PROGRAMMENDE:  System.out.println(textfeld[0]);
+							    isEnde=true;
+						            break;
+						
+					case MICHAEL_SAUER: System.out.println("Michael Sauer");
+							    break;
+						
+					case MIKE_SOUR:     System.out.println("Mike Sour");
+							    break;
+						
+					case MATHIAS_W:     System.out.println("Mathias Wittling");
+							    break;
+						
+					case BANANE:        System.out.println("Mac ist zu umständlich!");
+							    break;
 					default:
 						System.out.println("Fehler: Kenne ich nicht!");
 					}
